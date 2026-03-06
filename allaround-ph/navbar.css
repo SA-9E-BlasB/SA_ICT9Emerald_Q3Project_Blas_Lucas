@@ -1,0 +1,124 @@
+/* navbar.css - shared styles for all pages */
+
+/* reset margins and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main navigation bar styles */
+.global-nav {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(20, 48, 32, 0.95);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 100px;
+  padding: 12px 28px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 220, 100, 0.4);
+  box-shadow: 0 20px 40px -12px #052010, 0 0 0 1px #b0e0a0 inset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+/* brand logo and name container */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.5rem;
+  background: linear-gradient(145deg, #ffeeaa, #b0ffb0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+/* motorcycle icon in brand */
+.nav-brand i {
+  color: #fad45c;
+  font-size: 2rem;
+}
+
+/* container for navigation links */
+.nav-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* individual navigation link style */
+.nav-link {
+  background: transparent;
+  border: 2px solid #529c6b;
+  color: #f3ffd8;
+  border-radius: 60px;
+  padding: 8px 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.15s;
+  text-decoration: none;
+}
+
+/* icon inside nav link */
+.nav-link i {
+  color: #ffd966;
+}
+
+/* active page link style */
+.nav-link.active {
+  background: #3d9c5b;
+  border-color: #fbffb0;
+  color: #062010;
+  box-shadow: 0 0 18px #b5ff95;
+}
+
+/* active page icon color */
+.nav-link.active i {
+  color: #06331c;
+}
+
+/* hover effect for nav links */
+.nav-link:hover {
+  background: #2c7844;
+  border-color: #f9df93;
+  transform: scale(1.02);
+}
+
+/* philippines badge style */
+.ph-badge {
+  background: #4d7a46;
+  border-radius: 40px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #f5d371;
+  color: white;
+}
+
+/* container for page content */
+.page-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* body base styles */
+body {
+  font-family: 'Inter', 'Plus Jakarta Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
